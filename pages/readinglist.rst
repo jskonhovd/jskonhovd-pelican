@@ -17,6 +17,11 @@ Currently Reading
 
 .. _`CLRS`: http://amzn.to/T4Sw9A
 
+`The C Programming Language`_
+ by Brian Kernighan & Dennis Ritchie
+
+.. _`The C Programming Language`: http://amzn.to/Uk8Kxs
+
 Finished Reading
 ----------------
 

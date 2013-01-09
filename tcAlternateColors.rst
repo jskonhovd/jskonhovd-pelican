@@ -5,6 +5,7 @@ TC - AlternateColors - Java
 :tags: Java
 :author: Jeffrey Skonhovd
 :excerpt: topcoder
+
 Topcoder!!! The following is my solution for the 500 point problem from SRM 564 DIV 2. 
 
 
