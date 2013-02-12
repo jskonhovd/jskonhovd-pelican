@@ -14,21 +14,21 @@ I think I am doing well considering my schedule. I try to complete the homework 
 The first part of this course is going over the Standard ML language. I am pretty sure I will never have to program in this Language as a professional, but I find it interesting :). The following is a quick example of Fizzbuzz, which is written in SML.
 
 .. code-block:: SMLLexer
-	fun fizzbuzz() = 
-    let fun helper(i : int, acc : string list) =
-	    if i < 100
-	    then case (i mod 3 = 0, i mod 5 = 0) of 
-		     (true, false) => helper(i+1, acc@["Fizz"])
-		   | (false, true) => helper(i+1, acc@["Buzz"])
-		   | (true, true) => helper(i+1, acc@["FizzBuzz"])
-		   | (false, false)  => helper(i+1, acc@[Int.toString i])
-	    else acc
-    in
-	helper(1,[])
-    end
-	
-	val x = fizzbuzz()
 
+	fun fizzbuzz() = 
+		let fun helper(i : int, acc : string list) =
+			if i < 100
+			then case (i mod 3 = 0, i mod 5 = 0) of 
+				 (true, false) => helper(i+1, acc@["Fizz"])
+			   | (false, true) => helper(i+1, acc@["Buzz"])
+			   | (true, true) => helper(i+1, acc@["FizzBuzz"])
+			   | (false, false)  => helper(i+1, acc@[Int.toString i])
+			else acc
+		in
+			helper(1,[])
+		end
+
+	val x = fizzbuzz()
 
 In addition to the course, I also finished chapter 1 of The C Programming Language back in January. I will continue that book once I feel like taking a break on Coursera. I also planed on taking another course on Courera in March, but I will determine if I can based on my schedule.
 
