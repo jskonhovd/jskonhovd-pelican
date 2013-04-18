@@ -32,9 +32,9 @@ This problem is a classic. We want to write a function that calculates the value
           }
         public static void main(String[] args) {
         // TODO Auto-generated method stub
-        DynamicPrograming a = new DynamicPrograming();
-        System.out.println(a.fib(0));
-        System.out.println(a.fib(15));
+        DynamicPrograming foo = new DynamicPrograming();
+        System.out.println(foo.fib(0));
+        System.out.println(foo.fib(15));
         }
     }
 
@@ -71,9 +71,9 @@ is my solution to the creating a function that calculates the value of the nth m
 
             public static void main(String[] args) {
             // TODO Auto-generated method stub
-            DynamicPrograming a = new DynamicPrograming();
-            System.out.println(a.fib2(0));
-            System.out.println(a.fib2(0));
+            DynamicPrograming foo = new DynamicPrograming();
+            System.out.println(foo.fib2(0));
+            System.out.println(foo.fib2(0));
             }
       }
 
@@ -85,3 +85,60 @@ This next problem is another classic problem you can solve using Dynamic Program
 a classic in Computer Science. the longest common substring problem is to find the longest string that is a substring 
 of two or more strings. 
 
+.. code-block:: Java
+      
+      public class LongestCommonSubString {
+
+            public String getLongestCommonSubString(String a, String b)
+            {
+            int z = 0;
+            int[][] l = new int[a.length()][b.length()];
+            String ret = "";
+            int index = 0;
+            
+            for(int i =0; i< a.length(); i++)
+            {
+                  for(int j = 0; j < b.length(); j++)
+                  {
+                  
+                        if(a.charAt(i) == b.charAt(j))
+                        {
+                              if( i == 0 || j == 0)
+                              {
+                                    l[i][j] = 1;
+                              }
+                              else
+                              {
+                                    l[i][j] = l[i-1][j-1] + 1;
+                              }
+                              if(l[i][j] > z)
+                              {
+                                    z = l[i][j];
+                                    index = i;
+                              }
+                        }
+                        else
+                        {
+                              l[i][j] = 0;
+                        }
+            }
+            
+            }
+            ret = a.substring(index - z + 1, index+1);
+            return ret;
+            
+            
+            }
+            
+            public static void main(String[] args) {
+            // TODO Auto-generated method stub
+            LongestCommonSubString LCSS = new LongestCommonSubString();
+            System.out.println(LCSS.getLongestCommonSubString("abcd2323", "131313abcc"));
+            System.out.println(LCSS.getLongestCommonSubString("123456789", "123456789"));
+            System.out.println(LCSS.getLongestCommonSubString("12345", "123456789"));
+            System.out.println(LCSS.getLongestCommonSubString("12345", "1234c56789"));
+            }
+            
+      }
+
+Now, That's going to bring this blog post to an end. Thanks for reading.
