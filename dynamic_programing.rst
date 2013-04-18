@@ -1,6 +1,6 @@
 CLRS - Dynamic Programing - Java
 ################################
-:date: 2012-12-14 00:13
+:date: 2013-04-17 22:43
 :category: Programing
 :tags: Java, CLRS
 :author: Jeffrey Skonhovd
