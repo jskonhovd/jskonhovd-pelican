@@ -1,8 +1,8 @@
 CLRS - Dynamic Programing - Java
-###########################
+################################
 :date: 2012-12-14 00:13
 :category: Programing
-:tags: Java CLRS
+:tags: Java, CLRS
 :author: Jeffrey Skonhovd
 :excerpt: Dynamic Programing
 
@@ -85,7 +85,7 @@ This next problem is another classic problem you can solve using Dynamic Program
 a classic in Computer Science. the longest common substring problem is to find the longest string that is a substring 
 of two or more strings. 
 
-.. code-block:: Java
+.. code-block:: java
       
       public class LongestCommonSubString {
 
