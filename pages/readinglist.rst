@@ -4,9 +4,18 @@ Reading List
 
 I tend to read a lot of technical books. The following is a list of the books I have read that are relevant to this blog.
 
+
+
 Currently Reading
 -----------------
+`The Algorithm Design Manual`_
+ by Steven S. Skiena
 
+.. _`The Algorithm Design Manual`: http://amzn.to/12FhylY
+
+
+Shelved
+-----------------
 `Head First Design Patterns`_
  by Elisabeth Freeman
 
