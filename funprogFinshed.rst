@@ -1,6 +1,6 @@
 Coursera: Functional Programming Principles in Scala 
 ####################################################
-:date: 2012-12-02 18:30
+:date: 2013-5-19 18:30
 :category: Programing
 :tags: Coursera, MOOCs
 :author: Jeffrey Skonhovd
