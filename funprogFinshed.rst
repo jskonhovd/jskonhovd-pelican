@@ -13,7 +13,23 @@ serious course and worked a 40+ hour week, you should know that my weekends have
 But I am happy I completed this course, I feel like I am on the right track to become functionally literate. 
 
 
-I am taking a break from MOOCs for a while. It depends on what comes back up in the fall. I am going back to studying my backlog 
-in books. I believe I learn more from MOOCs in a short amount of time, but I feel like I have been neglecting other areas in my life. 
-I am also kinda worne out. So a little break will be all right for now. I will be taking more MOOCs in the future, especailly since 
-since Udacity and Georgia Tech are doing a online Master's degree for less than 7000 dollars.
+I am taking a break from MOOCs for a while. It depends on what courses are open in the fall. MOOCs are great. I have
+taken two since the start of this year. But, I am also kinda worne out. So a little break will be all right for now. 
+I will be taking more MOOCs in the future. 
+
+I am super excited that Georgia Tech has annocnced a partnership with udacity. They will be offering a completly online masters of Computer Science. The best part about this completly online masters 
+is that it will cost less than 7000$. This is a game changer for me. I graduated from the University of Memphis with a modest
+GPA of 3.31. I can talk all I want about how I was above a 3.5 for my last two years of schooling, but at the end of the day
+I graduated with a 3.31. I know I would not be on a short list for any fellowships. But with this program, It wouldn't matter.
+The program will cost less than a resonable used car. I can afford that. Also, Since this program is completely online, 
+I can live in Nashville or Memphis. I don't have to change my wife's life so I can get a affordable education. I am only worried
+about getting admitted. I think I am well above Gtech's minimum requirements, but who knows if they can scale immedatly to
+a MOOCs level of enrollment. I think there are alot of talented engineers in the same boat as me. 
+
+So, I will now explain my current course of action. I am currently going to focus my free time on working on Projects and 
+studying algorithms. I have a new algorithm book, The Algorithm Design Manual. I am going to shelve the other books I was 
+reading for a later date. So far, The Algorithm Design Manual seems a little more appliyed than CLRS, and the war stories are 
+not as dry as a typical algorithm book. The projects I will be working on are just to get some practical applications of 
+interesting frameworks into my GitHub. I just need some more practical code in my GitHub, other than algorithm problems. I
+think I will perform better on interviews if I had something more practical to speak to and show. I will give more details on 
+those projects in a later blog. Anyway, have a great day and thanks for reading.
