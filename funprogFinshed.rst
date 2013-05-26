@@ -6,7 +6,7 @@ Coursera: Functional Programming Principles in Scala
 :author: Jeffrey Skonhovd
 :excerpt: Functional Programming
 
-I just submitted my final programming assignment for the Functional Programming Principles in Scala class!!!! Now, I was pretty lazy with the final assignment. No pun intend, The last assignment covered streams and lazy evaluation. :) But, I am excited that I have officially completed my first MOOCs. This MOOC has been difficult. If you have never taking a serious course and worked a 40+ hour week, you should know that my weekends have been completely taken over by the course. But I am happy I completed this course, I feel like I am on the right track to become functionally literate.
+I just submitted my final programming assignment for the Functional Programming Principles in Scala class!!!! Now, I was pretty lazy with the final assignment. No pun intend, The last assignment covered streams and lazy evaluation. :) But, I am excited that I have officially completed my first MOOCs. This MOOC has been difficult. If you have never taken a serious course and worked a 40+ hour week, you should know that my weekends have been completely taken over by the course. But I am happy I completed this course, I feel like I am on the right track to become functionally literate.
 
 I am taking a break from MOOCs for a while. It depends on what courses are open in the fall. MOOCs are great. I have taken two since the start of this year. But, I am also kinda worn out. So a little break will be all right for now. I will be taking more MOOCs in the future.
 
