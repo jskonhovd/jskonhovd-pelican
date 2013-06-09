@@ -380,7 +380,11 @@ Hey all. So the start of June has been great. I am currently on Chapter 3 of The
       
     }
     
-Easily the most difficult impelemenation of those algorithm was the inplace quicksort, which reminded me why it is better to test than debug. The next chapter covers Dynamic Programming, which is pretty cool stuff. The problem I just finshed is the Parition Problem. I solved this problem a while ago on TopCoder, its called FairWorkload on TopCoder, using Binary Search. 
+Easily the most difficult impelemenation of those algorithm was the inplace quicksort, which reminded me why it is better to test than debug. The next chapter covers Dynamic Programming, which is pretty cool stuff. The problem I just finshed is the Parition Problem. I solved this problem a while ago on TopCoder, its called FairWorkload on TopCoder, using Binary Search. You can read the problem statement on `Topcoder`_.
+
+.. _`Topcoder`: http://community.topcoder.com/stat?c=problem_statement&pm=1901&rd=4650
+
+
 
 .. code-block:: java
 
@@ -444,4 +448,6 @@ Easily the most difficult impelemenation of those algorithm was the inplace quic
     
     }
 
+Now, The explaination of this problem is a little difficult. Remember, The goal is Partition S into K or fewer ranges, so as to minimize the maximum sum over all the ranges. This means that we want to return the largest sum of a range from the optimal solution. The optimal soultion is the one with the smallest maximum sum.  
 
+Thanks, Have a good day!
