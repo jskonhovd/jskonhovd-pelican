@@ -2,7 +2,7 @@ Parition Problem, and other stuff in June
 #########################################
 :date: 2013-6-9 12:34
 :category: Programing
-:tags: Java, Dynamic Programming, Sorting
+:tags: Java, Dynamic Programming
 :author: Jeffrey Skonhovd
 
 I decided to break up my large post into two smaller posts. The next chapter covers Dynamic Programming, which is pretty cool stuff. The problem I just finshed is the Parition Problem. I solved this problem a while ago on TopCoder, its called FairWorkload on TopCoder, using Binary Search. You can read the problem statement on `Topcoder`_.
