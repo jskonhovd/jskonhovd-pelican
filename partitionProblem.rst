@@ -5,7 +5,7 @@ Partition Problem, Sorting, and other stuff in June
 :tags: Java, Dynamic Programming, Sorting
 :author: Jeffrey Skonhovd
 
-Hey all. So the start of June has been great. I am currently on Chapter 3 of The Algorithm Design Manual, which is on Dynamic Programing. Chapter 1 was just a introduction that went over basic algorithm concepts like the RAM Model of Computation, Big Oh Notation, and Growth Rates of functions. The 2nd chapter went over Data Structures and Sorting. This was a pretty good review of the basics, and I relearned a lot. I hope I remember everything now. :) The following are my implemenations of QuickSort, MergeSort, InsertionSort, and SelectionSort.
+Hey all. So the start of June has been great. I am currently on Chapter 3 of The Algorithm Design Manual, which is on Dynamic Programing. Chapter 1 was just a introduction that went over basic algorithm concepts like the RAM model of computation, big oh notation, and growth rates of functions. The 2nd chapter went over Data Structures and Sorting. This was a pretty good review of the basics, and I relearned a lot. I hope I remember everything now. :) The following are my implemenations of QuickSort, MergeSort, InsertionSort, and SelectionSort.
 
 .. code-block:: java
 
@@ -380,4 +380,68 @@ Hey all. So the start of June has been great. I am currently on Chapter 3 of The
       
     }
     
-Easily the most difficult impelemenation of those algorithm was the inplace quicksort, which reminded me why it is better to test than debug. The next chapter covers Dynamic Programming, which is pretty cool.  
+Easily the most difficult impelemenation of those algorithm was the inplace quicksort, which reminded me why it is better to test than debug. The next chapter covers Dynamic Programming, which is pretty cool stuff. The problem I just finshed is the Parition Problem. I solved this problem a while ago on TopCoder, its called FairWorkload on TopCoder, using Binary Search. 
+
+.. code-block:: java
+
+    public class Partition {
+    
+        public int partitionProblem(int[] S, int k)
+    	{
+    		int n = S.length;
+    		int[] p = new int[n+1];
+    		int[][] M = new int[n][k];
+    		TestFramework test = new TestFramework();
+    		for(int i = 1; i < n+1; i++)
+    		{
+    			if(i > 0)
+    			{
+    				p[i] = p[i-1] + S[i-1];
+    			}
+    			else
+    			{
+    				p[0] = 0;
+    			}
+    		}
+    
+    		
+    		//init boundary conditions
+    		
+    		for(int i = 0; i < n; i++)
+    		{
+    			M[i][0] = p[i+1];		
+    		}
+    		
+    		for(int j = 1; j < k; j++)
+    		{
+    			M[0][j] = S[0];
+    		}
+    		
+    		for(int i = 1; i < n; i++)
+    			for(int j = 1; j <k; j++)
+    			{
+    				M[i][j] = Integer.MAX_VALUE;
+    				for(int x = 0; x < i; x++)
+    				{
+    					int s = Math.max(M[x][j-1],p[i+1] - p[x+1]);
+    					M[i][j] = Math.min(s, M[i][j]);
+    					
+    				}
+    			}
+    		test.print(M);
+    		return M[n-1][k-1];
+    	}
+    	public static void main(String[] args) {
+    		// TODO Auto-generated method stub
+    		TestFramework test = new TestFramework();
+    		Partition part = new Partition();
+    		int[] s = new int[] {1,2,3,4,5,6,7,8,9};
+    		
+    		int M = part.partitionProblem(s,3);
+    		System.out.println("Done");
+    		test.print(M);
+    	}
+    
+    }
+
+
