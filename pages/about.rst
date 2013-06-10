@@ -15,5 +15,4 @@ What do I do in my free time?:
 
 - I am a avid Crossfitter and I workout at Crossfit Nashville.
 
-- I am a fan of the US National Soccer team, and member of the American Outlaws.
-
+- I am a fan of the US National Soccer team.
