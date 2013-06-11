@@ -1,7 +1,7 @@
 Last Post of the Year
 #####################
 :date: 2012-12-30 16:44
-:category: Programing
+:category: Programming
 :tags: Java
 :author: Jeffrey Skonhovd
 
@@ -71,7 +71,7 @@ The second problem was from Topcoder. I am getting pretty good with the easy imp
 
     import java.util.*;
     public class ValueHistogram {
-   
+  
         public String makeString(int h, int[] num)
         {
             String ret = "";
@@ -79,20 +79,20 @@ The second problem was from Topcoder. I am getting pretty good with the easy imp
             {
                 if(h > num[i])
                 {
-               
+              
                     ret = ret + ".";
                 }
                 else
                 {
                     ret = ret + "X";
                 }
-           
+          
             }
-       
+      
             return ret;
         }
-   
-   
+  
+  
         public int findLargest(int[] num)
         {
             int max = 0;
@@ -105,18 +105,18 @@ The second problem was from Topcoder. I am getting pretty good with the easy imp
 
         public String[] build(int[] values) {
         String[] res = {""};
-       
+      
         int[] num = new int[10];
         for(int i = 0; i < values.length; i++)
         {
             num[values[i]]++;
         }
-       
+      
         int h = findLargest(num);
         h = h + 1;
-       
+      
         List<String> ret = new ArrayList<String>();
-       
+      
         while(h > 0)
         {
             ret.add(makeString(h, num));
@@ -127,4 +127,3 @@ The second problem was from Topcoder. I am getting pretty good with the easy imp
     }
 
 In this problem, We build out an array called num[], which represents the numbers 0-9. We then count the number of times each number is called. Next, I find h, which is the number that occurs most in this new array and increment it by one. After that, We can easily build the strings needed for the solution by determining if h > num[i].
-
