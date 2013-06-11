@@ -1,8 +1,8 @@
 Married!!! and other less important stuff
 #########################################
 :date: 2013-3-19 19:22
-:category: Programing
-:tags: Racket  
+:category: Programming
+:tags: Racket 
 :author: Jeffrey Skonhovd
 
 So, I am married!!!!!!!!!!  I told you guys I have been busy for a
@@ -46,97 +46,98 @@ start finishing up my backlog of books I need to read.
 So what is one of my blog posts without random programs I have written!!!! I
 honestly don't know. The following samples of code is Fizzbuzz and Quicksort
 written in Racket, and a Topcoder problem I completed about a month
-ago in C#. 
+ago in C#.
 
 
-The following is my version of Fizzbuzz in Racket. This is simlar to the SML version I posted earlier, because
-it uses recursion. I know most of the bindings are not used. I made the mistake of trying to 
-bind those variables earlier. That was a little awkward. 
+The following is my version of Fizzbuzz in Racket. This is similar to the SML version I posted earlier, because
+it uses recursion. I know most of the bindings are not used. I made the mistake of trying to
+bind those variables earlier. That was a little awkward.
 
 .. code-block:: scheme
-	
-	#lang racket
-	(define (fizzbuzz i)
-	(letrec (
-		   [modthree (remainder i 3)]
-		   [modfive (remainder i 5)]
-		   [modthreeandfive (remainder i 15)]
-		   [f (lambda (x lst)
-		        (cond[(> x 100) (print lst)]
-		             [(eq? (remainder x 15) 0) (f (+ x 1) (append lst (cons "fizzbuzz" null)))]
-		             [(eq? (remainder x 3) 0) (f (+ x 1) (append lst (cons "fizz" null))) ]
-		             [(eq? (remainder x 5) 0) (f (+ x 1) (append lst (cons "buzz" null)))]
-		             [#t (f (+ x 1) (append lst (cons x null)))]))]
-		   
-		   )
-	(f i '())))
+   
+    #lang racket
+    (define (fizzbuzz i)
+    (letrec (
+           [modthree (remainder i 3)]
+           [modfive (remainder i 5)]
+           [modthreeandfive (remainder i 15)]
+           [f (lambda (x lst)
+                (cond[(> x 100) (print lst)]
+                     [(eq? (remainder x 15) 0) (f (+ x 1) (append lst (cons "fizzbuzz" null)))]
+                     [(eq? (remainder x 3) 0) (f (+ x 1) (append lst (cons "fizz" null))) ]
+                     [(eq? (remainder x 5) 0) (f (+ x 1) (append lst (cons "buzz" null)))]
+                     [#t (f (+ x 1) (append lst (cons x null)))]))]
+          
+           )
+    (f i '())))
 
 
-The next problem is quicksort in Racket. This is pretty basic, refer to CLRS if you don't 
+The next problem is quicksort in Racket. This is pretty basic, refer to CLRS if you don't
 understand any part of it.
 
 .. code-block:: scheme
-	
-	#lang racket
-	(define (quicksort xs)
-	  (letrec (
-		       [pivot (if (empty? xs) xs (car xs))]
-		       [tail (if (empty? xs) '() (cdr xs))]
-		       [grt (filter (lambda(x) (> x pivot)) tail)]
-		       [lst (filter (lambda(x) (<= x pivot)) tail)])
-		(if (empty? xs)
-		      xs
-		     (append (quicksort lst) (list pivot) (quicksort grt) ))
-		 )
-	  )
+   
+    #lang racket
+    (define (quicksort xs)
+      (letrec (
+               [pivot (if (empty? xs) xs (car xs))]
+               [tail (if (empty? xs) '() (cdr xs))]
+               [grt (filter (lambda(x) (> x pivot)) tail)]
+               [lst (filter (lambda(x) (<= x pivot)) tail)])
+        (if (empty? xs)
+              xs
+             (append (quicksort lst) (list pivot) (quicksort grt) ))
+         )
+      )
 
 
-Finally, This is the only topcoder problem I have done in the past month. I need to do more, but with work and 
+Finally, This is the only topcoder problem I have done in the past month. I need to do more, but with work and
 Coursera I haven't had time.
 
 .. code-block:: csharp
 
-	using System;
-	using System.Text;
-	using System.Text.RegularExpressions;
-	using System.Collections;
-	using System.Collections.Generic;
-	// BEGIN CUT HERE
-	namespace topcoder
-	{
-	// END CUT HERE
-	public class Chopsticks {
-		public int getmax(int[] length) {
-		    int res = 0;
+    using System;
+    using System.Text;
+    using System.Text.RegularExpressions;
+    using System.Collections;
+    using System.Collections.Generic;
+    // BEGIN CUT HERE
+    namespace topcoder
+    {
+    // END CUT HERE
+    public class Chopsticks {
+        public int getmax(int[] length) {
+            int res = 0;
 
-		    Dictionary<int, int> k =new Dictionary<int,int>();
+            Dictionary<int, int> k =new Dictionary<int,int>();
 
-		    for (int i = 0; i < length.Length; i++)
-		    {
-		        if(!k.ContainsKey(length[i]))
-		        {
-		            k.Add(length[i], 1);
-		        }
-		        else
-		        {
-		            k[length[i]]++;
-		        }
+            for (int i = 0; i < length.Length; i++)
+            {
+                if(!k.ContainsKey(length[i]))
+                {
+                    k.Add(length[i], 1);
+                }
+                else
+                {
+                    k[length[i]]++;
+                }
 
-		    }
+            }
 
-		    foreach (KeyValuePair<int, int> j in k)
-		    {
-		        if (j.Value % 2 == 0)
-		        {
-		            res += j.Value / 2;
-		        }
-		        else
-		        {
-		            res += (j.Value - 1) / 2;
-		        }
-		    }
-		    return res;
-		}
-	}
+            foreach (KeyValuePair<int, int> j in k)
+            {
+                if (j.Value % 2 == 0)
+                {
+                    res += j.Value / 2;
+                }
+                else
+                {
+                    res += (j.Value - 1) / 2;
+                }
+            }
+            return res;
+        }
+    }
 
 Well, I hope you guys enjoyed this blog post. Good night!!
+
