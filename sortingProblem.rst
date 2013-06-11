@@ -5,9 +5,9 @@ Sorting, and other stuff in June
 :tags: Java, Sorting
 :author: Jeffrey Skonhovd
 
-Hey all. So the start of June has been awesome. I am currently on the 3rd of The Algorithm Design Manual, which is on Dynamic Programing. Chapter 1 was just a introduction that went over basic algorithm concepts like the RAM model of computation, big oh notation, and growth rates of functions. The 2nd chapter went over Data Structures and Sorting. This was a pretty good review of the basics, and I relearned a lot. I hope I remember everything now. :) 
+Hey all. So, The start of June has been awesome. I am currently on the 3rd of The Algorithm Design Manual, which is on Dynamic Programing. Chapter 1 was just a introduction that went over basic algorithm concepts like the RAM model of computation, big oh notation, and growth rates of functions. The 2nd chapter went over Data Structures and Sorting. This was a pretty good review of the basics, and I relearned a lot. I hope I remember everything now. :) 
 
-IN my review, I decided to write every sorting algorithm covered in the 2nd chapter of this book. The following are my implemenations of QuickSort, MergeSort, InsertionSort, and SelectionSort. I hope you enjoy!!!
+In my review, I decided to write every sorting algorithm covered in the 2nd chapter of this book. The following are my implemenations of QuickSort, MergeSort, InsertionSort, and SelectionSort. I hope you enjoy!!!
 
 .. code-block:: java
 
@@ -382,6 +382,6 @@ IN my review, I decided to write every sorting algorithm covered in the 2nd chap
       
     }
     
-This can be difficult to implement if your Java is a little rusty. Everything became alot easier when I started to use my TestFramework class and actually write Unit Tests. I wish I didn't start writing test cases with the last algorithm I wrote, QuickSort. I think its always good to stress the following. Do not debug, Test. :)
+This can be difficult to implement if your Java is a little rusty. Everything became alot easier when I started to use my TestFramework class, and I actually wrote Unit Tests. I wish I didn't start writing test cases with the last algorithm I wrote, QuickSort. I think its always good to stress the following. Do not debug, Test. :)
 
 Thanks, Have a good day!
