@@ -1,4 +1,4 @@
-Parition Problem, and other stuff in June
+Partition Problem, and other stuff in June
 #########################################
 :date: 2013-6-9 12:34
 :category: Programing
