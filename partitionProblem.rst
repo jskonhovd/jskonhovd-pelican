@@ -1,6 +1,6 @@
 Partition Problem, and other stuff in June
 ##########################################
-:date: 2013-6-9 12:34
+:date: 2013-6-9 13:34
 :category: Programming
 :tags: Java, Dynamic Programming
 :author: Jeffrey Skonhovd
@@ -80,8 +80,3 @@ M[n,k] = minimum of {1, ... ,n} of max(M[i,k-1], sum j = i+1 to n Sj).
 
 We can then use this formula to built a table for the dynamic programming solution. Anyway, A better explanation is in the Algorithm Design Manual, and I urge you to look at it if you are interested.
 
-
--- 
-Jeffrey Wayne Skonhovd
-
-desk (615) 762 1890 | mobile (615) 946 1427 
