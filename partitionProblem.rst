@@ -5,7 +5,7 @@ Parition Problem, and other stuff in June
 :tags: Java, Dynamic Programming
 :author: Jeffrey Skonhovd
 
-I decided to break up my large post into two smaller posts. I am currently reading the first edition of The Algorithm Design Manual. I am currently on Chapter 3, which covers Dynamic Programming The problem I just finshed is the Parition Problem. I solved this problem a while ago on TopCoder, its called FairWorkload on TopCoder, using Binary Search. You can read the problem statement on `Topcoder`_. This is an interesting problem with alot of different approachs to a solution.
+I decided to break up my large post into two smaller posts. I am currently reading the first edition of The Algorithm Design Manual. I am currently on Chapter 3, which covers Dynamic Programming. The problem I just finshed is the Parition Problem. I solved this problem a while ago on TopCoder, its called FairWorkload on TopCoder, using Binary Search. You can read the problem statement on `Topcoder`_. This is an interesting problem with alot of different approachs to a solution.
 
 .. _`Topcoder`: http://community.topcoder.com/stat?c=problem_statement&pm=1901&rd=4650
 
@@ -15,7 +15,7 @@ I decided to break up my large post into two smaller posts. I am currently readi
 
     public class Partition {
     
-        public int partitionProblem(int[] S, int k)
+      public int partitionProblem(int[] S, int k)
       {
     		int n = S.length;
     		int[] p = new int[n+1];
@@ -78,4 +78,4 @@ To solve this problem, We want to consider a recursive exhaustive search approac
 
 M[n,k] = minimum of {1, ... ,n} of max(M[i,k-1], sum j = i+1 to n Sj).
 
-We can then use this formula to built a table for the dynamic programing solution of this problem. Anyway, A better explantion is in the Algorthm Design Manual, and I urge to look at it if you are interested.
+We can then use this formula to built a table for the dynamic programing solution of this problem. Anyway, A better explantion is in the Algorthm Design Manual, and I urge you to look at it if you are interested.
