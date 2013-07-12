@@ -18,6 +18,8 @@ What do I do in my free time?:
 - I am a fan of the US National Soccer team.
 
 
-My public gpg_ key.
+If you wish to contact me, I prefer to be contacted by my email address. jskonhovd@gmail.com.
+
+If you are concern with privacy or security, you can use my public gpg_ key when you contact me.
 
 .. _gpg: http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x3884D2D043476779
