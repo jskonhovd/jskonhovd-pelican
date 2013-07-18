@@ -3,7 +3,9 @@ About Me
 :date: 2012-11-11 14:30
 :author: Jeffrey Skonhovd
 
-I am Software Engineer. I currently live in Nashville, TN and work for company called Asurion_. 
+I am Software Engineer. I am a polyglot programmer with experience using Java, C#, Python, Ruby, and Scala. I have excellent algorithm and data structures knowledge. 
+
+I currently live in Nashville, TN and work for company called Asurion_. 
 My interests include programing languages, distributed systems, and algorithm competitions.
 
 .. _Asurion: http://www.asurion.com
@@ -20,6 +22,6 @@ What do I do in my free time?:
 
 If you wish to contact me, I prefer to be contacted by my email address. jskonhovd@gmail.com.
 
-If you are concern with privacy or security, you can use my public gpg_ key when you contact me.
+If you are concern with privacy or security, you can use my public pgp_ key when you contact me.
 
-.. _gpg: http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x3884D2D043476779
+.. _pgp: http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x3884D2D043476779
